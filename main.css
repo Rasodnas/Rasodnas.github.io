@@ -1,0 +1,626 @@
+/* CUSTOM FONT */
+
+     		 @font-face {font-family: Sobrio; src: url("font/Akkurat Regular.ttf"); }
+     		 @font-face {font-family: Sobrio; font-style: italic; src: url("font/Akkurat Italic.ttf"); }
+     		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/Akkurat Bold.ttf"); }
+
+
+
+/* GLOBAL VARIABLES */
+:root {
+			--fontSize: 9pt;
+  			--squarePadding: 1.2rem;
+  			--letterSpacing: 0.02rem;
+  			--line-height:1.4rem;
+
+        --swiper-navigation-size: 1.2rem !important;
+
+  			font-family: Sobrio;
+     		font-size: var(--fontSize);
+     		line-height:var(--line-height);
+     		letter-spacing: var(--letterSpacing)
+}
+
+
+/* GENERAL FORMATTING  */
+
+        html{
+          margin:0;
+          }
+
+     		 body{
+     		 	margin:0;
+     		 	font-size:1rem;
+     		 	font-style:normal;
+     		 	font-weight:normal;
+     		 	padding:0;
+     		 	line-height:var(--line-height);
+     		 	letter-spacing: var(--letterSpacing);
+          height:100vh;
+     		 }
+
+     		 h1{
+     		 	font-size:1rem;
+     		 	font-style:normal;
+     		 	font-weight:normal;
+     		 	padding:0;
+     		 	margin:0;
+     		 	line-height:var(--line-height);
+     		 	letter-spacing: var(--letterSpacing);
+     		 }
+
+     		 h2{
+     		 	font-size:1rem;
+     		 	font-style:italic;
+     		 	font-weight:normal;
+     		 	padding:0;
+     		 	margin:0;
+     		 	line-height:var(--line-height);
+     		 	letter-spacing: var(--letterSpacing);
+     		 }
+
+     		 p{
+     		 	font-size:1rem;
+     		 	font-style:normal;
+     		 	font-weight:normal;
+     		 	padding:0;
+     		 	margin:0;
+     		 	line-height:var(--line-height);
+     		 	letter-spacing: var(--letterSpacing);
+     		 }
+
+         a, a:visited, a:hover, a:active {
+           color: inherit;
+           text-decoration:none;
+         }
+
+
+
+
+/* GLOBAL SQUARE STYLING */
+
+			.square{
+     		 	/* background: linear-gradient(-120deg, black 0%, blue 100%) !important; */
+                /* background: url("img/item3.png") !important; background-size:cover !important; */
+                /* color: white !important; */
+     		 	/* order: 0px solid #222222 !important; */
+  				aspect-ratio: 1;
+                box-sizing: border-box;
+  				position:relative;
+                display:flex;
+                flex-flow: column wrap;
+                transition: .15s;
+     		 }
+
+             .squareTextContainer{
+                position:absolute;
+                top:0;
+                left:0;
+                box-sizing: border-box;
+                width:100%;
+                height:100%;
+                padding:var(--squarePadding);
+                padding-top: calc(var(--squarePadding) - .08rem);
+                z-index:80;
+             }
+
+      /* for animation
+      .square:hover{
+          -webkit-box-shadow: inset 0px 0px 12px -9px rgba(0,0,0,.6);
+          box-shadow: inset 0px 0px 12px -9px rgba(0,0,0,.6);
+          padding: calc(var(--squarePadding) + 0.15rem);
+      }
+
+       .square:active{
+          -webkit-box-shadow: inset 0px 0px 28px -9px rgba(0,0,0,.7);
+          box-shadow: inset 0px 0px 28px -9px rgba(0,0,0,.7);
+          padding: calc(var(--squarePadding) + 0.2rem);
+      }
+      */
+
+     	.square2{
+     		 	background-color: none;
+     		 	/* border: 1px solid #F0f0f0; */
+  				padding:1.5rem;
+  				line-height: 1.4rem;
+          height:100vh;
+  				position:relative;
+
+     		 }
+
+
+
+
+/* HOME PAGE CONTENT STYLING */
+
+
+     	.topLeftText {
+          /* position:absolute;
+          left:calc(var(--squarePadding) + .1rem);*/
+          align-items: flex-start;
+     	}
+
+		.topRightText {
+     	  /*position:absolute;
+     	  right:calc(var(--squarePadding) + .1rem);*/
+            align-items: flex-end;
+     	}
+
+     	.botLeftText {
+     		 	position:absolute;
+                left:var(--squarePadding);
+     		 	bottom:var(--squarePadding);
+     		 }
+
+		.botRightText {
+     		 	position:absolute;
+     		 	top: calc(var(--squarePadding) - .08rem);
+     		 	right: var(--squarePadding);
+     		 }
+
+      .squareImg{
+     		 	position:absolute;
+     		 	max-width: 100%;
+    			max-height: 100%;
+     		 }
+
+
+/* PROJECT PAGE SINGLE SQUARE STYLING */
+
+          .projMegaWrapper {
+            display:flex;
+            flex-flow: row wrap;
+          }
+
+          .projContainer{
+            /* grid-area:sqProj; */
+            display:flex;
+            height:100vh;
+            width:100vw;
+            overflow: scroll;
+            -webkit-box-sizing: border-box; /* Safari/ Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;
+          }
+
+          .projImg {
+            max-height:70%;
+            max-width:70%;
+          }
+
+          .projImgFirst {
+            margin:auto;
+            max-height:75%;
+            max-width: 75%;
+          }
+
+          .projImgWrapper{
+            display:flex;
+            flex-flow: row wrap;
+            gap: 5rem;
+            margin:auto;
+            max-height:100%;
+          }
+
+
+
+
+
+/* PROJECT PAGE v.2 SINGLE SQUARE STYLING */
+
+
+          .projContainer2{
+            /* grid-area:sqProj; */
+            box-sizing: border-box;
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+          }
+
+          /*
+          .projDescription2{
+            display:block;
+            columns:1;
+            max-width:91%;
+            text-align: justify;
+            margin:auto;
+            margin-top:3rem;
+            margin-bottom:5rem;
+          }
+
+
+          .imgContainer{
+            display:flex;
+            flex-flow: row wrap;
+            align-content: center;
+            max-height: 100vh;
+            gap:2rem;
+            max-width:91%;
+            margin:auto;
+          }
+          */
+
+          .projImg2 {
+            margin:auto;
+            max-width: 30%;
+            max-height: 30%;
+          }
+
+
+
+
+
+
+
+
+/* SWIPER SETTINGS */
+
+        .swiper-slide{
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            flex-flow: row wrap;
+
+            box-sizing: border-box;
+            padding: var(--squarePadding) !important;
+            gap: 3rem;
+        }
+
+        .swiper-button-next {
+          color: black !important;            /* ARROW COLOR */
+          right: 1rem !important;
+        }
+
+        .swiper-button-prev {                 /* ARROW COLOR */
+          color: black !important;
+          left: 1rem !important;
+        }
+
+        .swiper-pagination-fraction {
+          bottom:var(--squarePadding) !important;
+        }
+
+        /*  for HALF PAGE CLICK SCROLL MODE (GRADUAL SWIPE DOESNT WORK)
+
+        .swiper-button-next {
+          color: black !important;
+          right: 1rem !important;
+          top: 0 !important;
+          width:50% !important;
+          height: 100% !important;
+          justify-content:right !important;
+        }
+
+        .swiper-button-prev {
+          color: black !important;
+          left: 1rem !important;
+          width: 50% !important;
+          top: 0 !important;
+          height: 100% !important;
+          justify-content:left !important;
+        }
+        */
+
+
+
+
+
+/* PROJECT PAGE CONTENT STYLING */
+         .fixedTopLeftText {
+        		 	position:fixed;
+              top:var(--squarePadding);
+        		 	left:var(--squarePadding);
+              z-index: 999;
+        		 }
+
+   			.fixedTopRightText {
+        		 	position:fixed;
+              top:var(--squarePadding);
+        		 	right:var(--squarePadding);
+              z-index: 999;
+              text-align: right;
+        		 }
+
+        .fixedBotLeftText {
+        		 	position:fixed;
+        		 	bottom:var(--squarePadding);
+        		 	left:var(--squarePadding);
+              z-index: 999;
+        		 }
+
+   			.fixedBotRightText {
+        		 	position:fixed;
+        		 	bottom:var(--squarePadding);
+        		 	right:var(--squarePadding);
+              z-index: 999;
+              text-align: right;
+        		 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5 column grid */
+@media screen and (min-width: 2200px) and (max-width: 10000px) {
+
+     		 /* set the grid to 5 blocks */
+ 			 .squareContainer{
+     		 	display: grid;
+  				grid-template-columns: repeat(5, 1fr);
+  				grid-gap: 0px;
+     		 }
+
+        :root {
+          --fontSize: 10pt;
+          --squarePadding: 1.2rem;
+          --letterSpacing: 0.02rem;
+          --line-height:1.3rem;
+
+          }
+
+        .projDescription{
+            display:block;
+            columns:1;
+            max-width:40%;
+            text-align: center;
+            margin:auto;
+          }
+
+        /* for multi img slide */
+        .projImgWrapper{
+            display:flex;
+            flex-flow: row wrap;
+            gap: 2rem;
+            margin:auto;
+            max-height:100%;
+            max-width: 70%;
+            align-items: center;
+            justify-content: center;
+          }
+
+        .projImgMulti {
+            max-height:30vh;
+          }
+
+        /* for proj page v.2 */
+        .projContainer2{
+            /* grid-area:sqProj; */
+            box-sizing: border-box;
+            display:flex;
+            flex-flow: column wrap;
+            align-content: center;
+            justify-content: center;
+            width:100%;
+            margin:auto;
+            height:1fr;
+            padding:3rem 30vw 3rem 30vw;
+          }
+
+        .imgContainer{
+            display:flex;
+            flex-flow: row wrap;
+            align-content: center;
+            gap:2rem;
+            margin:auto;
+          }
+
+        .projDescription2{
+            display:block;
+            columns:2;
+            text-align: justify;
+            margin:auto;
+            margin-top:3rem;
+            margin-bottom:8rem;
+          }
+
+
+			}
+
+/* 4 column grid  */
+@media screen and (min-width: 1400px) and (max-width: 2200px) {
+
+     		 /* set the grid to 4 blocks */
+ 			 .squareContainer{
+     		 	display: grid;
+  				grid-template-columns: repeat(4, 1fr);
+  				grid-gap: 0px;
+     		 }
+
+        :root {
+          --fontSize: 8pt;
+          --squarePadding: 1.1rem;
+          --letterSpacing: 0.02rem;
+          --line-height:1.3rem;
+
+          }
+
+        .projDescription{
+            display:block;
+            columns:1;
+            max-width:60%;
+            text-align: center;
+            margin:auto;
+          }
+
+        /* for multi img slide */
+        .projImgMulti {
+            max-height:35vh;
+          }
+
+        .projImgWrapper{
+            display:flex;
+            flex-flow: column wrap;
+            gap: 2rem;
+            margin:auto;
+            max-height:100%;
+            max-width: 90%;
+            align-items: center;
+            justify-content: center;
+          }
+
+			}
+
+/* 3 column grid */
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+
+     		 /* set the grid to 3 blocks */
+ 			 .squareContainer{
+     		 	display: grid;
+  				grid-template-columns: repeat(3, 1fr);
+  				grid-gap: 0px;
+     		 }
+
+        :root {
+          --fontSize: 8.5pt;
+          --squarePadding: 1.2rem;
+          --letterSpacing: 0.02rem;
+          --line-height:1.4rem;
+
+          }
+
+        .projDescription{
+            display:block;
+            columns:1;
+            max-width:50%;
+            text-align: center;
+            margin:auto;
+          }
+
+        /* for multi img slide */
+        .projImgMulti {
+            max-height:30vh;
+          }
+
+        .projImgWrapper{
+            display:flex;
+            flex-flow: column wrap;
+            gap: 2rem;
+            margin:auto;
+            max-height:100%;
+            max-width: 80%;
+            align-items: center;
+            justify-content: center;
+          }
+
+			}
+
+/* 2 columns grid */
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+
+     		 /* set the grid to 2 blocks */
+ 			 .squareContainer{
+     		 	display: grid;
+  				grid-template-columns: repeat(2, 1fr);
+  				grid-gap: 0px;
+     		 }
+
+        :root {
+          --fontSize: 9pt;
+          --squarePadding: 1.2rem;
+          --letterSpacing: 0.02rem;
+          --line-height:1.4rem;
+
+          }
+
+        .projDescription{
+            display:block;
+            columns:1;
+            max-width:60%;
+            text-align: center;
+            margin:auto;
+          }
+
+        /* for multi img slide */
+        .projImgMulti {
+            max-height:30vh;
+          }
+
+        .projImgWrapper{
+            display:flex;
+            flex-flow: column wrap;
+            gap: 2rem;
+            margin:auto;
+            max-height:100%;
+            max-width: 80%;
+            align-items: center;
+            justify-content: center;
+          }
+			}
+
+
+/* 1 column grid */
+@media screen and (max-width: 900px) {
+
+     		 /* set the grid to 1 block */
+ 			 .squareContainer{
+     		 	display: grid;
+  				grid-template-columns: repeat(1, 1fr);
+  				grid-gap: 0px;
+     		 }
+
+        :root {
+          --fontSize: 10pt;
+          --squarePadding: 1.2rem;
+          --letterSpacing: 0.02rem;
+          --line-height:1.4rem;
+
+          }
+
+        /* hide the proj titles
+       .topLeftText {
+          display:none;
+         }
+
+   		 .topRightText {
+        	display:none;
+        } */
+
+       .projDescription{
+            display:block;
+            columns:1;
+            max-width:75%;
+            text-align: center;
+            margin:auto;
+          }
+
+        .projImg{
+            max-width:85%;
+        }
+
+        /* for multi img slide */
+        .projImgMulti {
+            max-height:30vh;
+          }
+
+        .projImgWrapper{
+            display:flex;
+            flex-flow: column wrap;
+            gap: 1.5rem;
+            margin:auto;
+            max-height:100%;
+            max-width: 90%;
+            align-items: center;
+            justify-content: center;
+          }
+
+
+			}
