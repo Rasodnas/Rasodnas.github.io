@@ -141,8 +141,8 @@
      	}
 
 		.topRightText {
-     	  /*position:absolute;
-     	  right:calc(var(--squarePadding) + .1rem);*/
+     	  /* position:absolute;
+     	  right:calc(var(--squarePadding) + .1rem); */
             align-items: flex-end;
      	}
 
@@ -359,8 +359,8 @@
 
 
 
-/* 5 column grid */
-@media screen and (min-width: 2200px) and (max-width: 10000px) {
+/* 5 column grid ( > 1400px large screens) */
+@media screen and (min-width: 1800px) and (max-width: 10000px) {
 
      		 /* set the grid to 5 blocks */
  			 .squareContainer{
@@ -435,8 +435,8 @@
 
 			}
 
-/* 4 column grid  */
-@media screen and (min-width: 1400px) and (max-width: 2200px) {
+/* 4 column grid (1500px macbook pro 15) */
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
 
      		 /* set the grid to 4 blocks */
  			 .squareContainer{
@@ -479,8 +479,8 @@
 
 			}
 
-/* 3 column grid */
-@media screen and (min-width: 1100px) and (max-width: 1400px) {
+/* 3 column grid (1200px small screens) */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
      		 /* set the grid to 3 blocks */
  			 .squareContainer{
@@ -523,8 +523,8 @@
 
 			}
 
-/* 2 columns grid */
-@media screen and (min-width: 900px) and (max-width: 1100px) {
+/* 2 columns grid (768px tablets) */
+@media screen and (min-width: 480px) and (max-width: 768px) {
 
      		 /* set the grid to 2 blocks */
  			 .squareContainer{
@@ -567,8 +567,8 @@
 			}
 
 
-/* 1 column grid */
-@media screen and (max-width: 900px) {
+/* 1 column grid (480px mobile devices) */
+@media screen and (max-width: 480px) {
 
      		 /* set the grid to 1 block */
  			 .squareContainer{
