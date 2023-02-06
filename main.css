@@ -135,15 +135,15 @@
 
 
      	.topLeftText {
-          /* position:absolute;
-          left:calc(var(--squarePadding) + .1rem);*/
-          align-items: flex-start;
+          position:absolute;
+          left:calc(var(--squarePadding) + .1rem);
+          /*  align-items: flex-start; */
      	}
 
 		.topRightText {
-     	  /*position:absolute;
-     	  right:calc(var(--squarePadding) + .1rem);*/
-            align-items: flex-end;
+     	  position:absolute;
+     	  right:calc(var(--squarePadding) + .1rem);
+            /* align-items: flex-end; */
      	}
 
      	.botLeftText {
