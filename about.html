@@ -20,7 +20,7 @@
 
 
 
-<body style="color:white; background:black;">
+<body style="color:black; background:white;">
 
 <!-- load Swiper js via CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -28,10 +28,10 @@
 
 
 
-  <span class="fixedTopLeftText"> <h1>  <a href="index.html"> ← </a> Raffaello Chiarioni </h1> </span>
-  <span class="fixedTopRightText"> <h2> Graphic Design </h2> </span>
+  <span class="fixedTopLeftText"> <h1>  Raffaello Chiarioni </h1> <br> <a href="index.html"> ← </a> </span>
+  <span class="fixedTopRightText"> <h2> Graphic Designer </h2> </span>
   <span class="fixedBotLeftText"> <a href="mailto:raffaello.chiarioni@gmail.com"> raffaello.chiarioni@gmail.com </a> <br> <a href="https://www.instagram.com/raffibili/?hl=it"> @raffibili </a> </span>
-  <span class="fixedBotRightText"> </span>
+  <span class="fixedBotRightText"> 1996 </span>
 
     <div class="projContainer">
 
@@ -41,17 +41,48 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
 
-                <!-- FRIST SLIDE -->
+                <!-- ABOUT ME -->
                 <div class="swiper-slide">
                     <div class="projDescription">
-                       Graphic designer, inizia la libera professione durante il corso di laurea al Politecnico di Milano lavorando con artisti, istituzioni culturali e commerciali. Collabora per più di tre anni con Edicola 518, dando forma visiva alle principali pubblicazioni e iniziative artistiche del collettivo.
+                      ABOUT ME <br><br>
+                       I began my freelance career while attending the first classes at Politecnico di Milano, where I've graduated in Visual Communication Design in 2020. 
+                       <br><br> I work with artists, public institutions and private companies, in both commercial and artistic endeavours. 
+                       <br><br> I have collaborated for more than three years with <a target="_blank" href="https://www.emergenzeweb.it/edicola-518/">Edicola 518</a>, giving visual form to the Italian art collective's main editorial and artistic projects.<br><br>
+
+                    </div>
+                </div>
+
+                <!-- ABOUT THE SITE -->
+                <div class="swiper-slide">
+                    <div class="projDescription">
+
+                       ABOUT THIS SITE <br><br>
+                       I consider this website both as a tool to forge future collaborations, as well as a mirror that helps me to keep track of where I am leading my practice, and where she wants to lead me next.
+                       <br><br>
+                       This handcrafted grid-block website, is concieved not only to host commissioned projects, but also self initiated work and items that are meaningful for constituting my personal universe of meaning, that eventually will be put in appropriate ITEM BAGS.
+                       <br><br>
+                       First, I am currently still uploading all the projects that I showed in the home page (plus more), so it could take a while to see a lively populated database, as this site is intended to be.
+                       
+                    </div>
+                </div>
+
+                <!-- BAGS -->
+                <div class="swiper-slide">
+                    <div class="projDescription">
+                      ITEM BAGS <br><br>
+                     
+                       <a href="bags/bag1.html"> < Empty Bag 1 > </a> <br><br>
+                       <a href="bags/bag2.html"> < Empty Bag 2 > </a> <br><br>
+                       <a href="bags/bag3.html"> < Empty Bag 3 > </a> <br><br>
+                       
+
                     </div>
                 </div>
 
             </div>
 
 
-                <!-- If we need pagination 
+                <!-- If we need pagination
                 <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"></div> -->
 
                 <!-- If we need navigation buttons -->
@@ -74,7 +105,7 @@
 
       // Optional parameters
       direction: 'horizontal',
-      loop: false,
+      loop: true,
 
       // If we need pagination
       pagination: {
@@ -116,7 +147,17 @@
 </script>
 
 
+<style>
+          .swiper-button-next {
+          color: white !important;            /* ARROW COLOR */
+          right: 1rem !important;
+        }
 
+        .swiper-button-prev {                 /* ARROW COLOR */
+          color: white !important;
+          left: 1rem !important;
+        }
+</style>
 
 
 

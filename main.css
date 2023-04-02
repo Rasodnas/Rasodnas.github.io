@@ -1,8 +1,8 @@
 /* CUSTOM FONT */
 
-     		 @font-face {font-family: Sobrio; src: url("font/Akkurat Regular.ttf"); }
-     		 @font-face {font-family: Sobrio; font-style: italic; src: url("font/Akkurat Italic.ttf"); }
-     		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/Akkurat Bold.ttf"); }
+     		 /* @font-face {font-family: Sobrio; src: url("font/Akkurat Regular.ttf"); }
+     		/* @font-face {font-family: Sobrio; font-style: italic; src: url("font/Akkurat Italic.ttf"); }
+     		 /* @font-face {font-family: Sobrio; font-weight: bold; src: url("font/Akkurat Bold.ttf"); }
 
 
 
@@ -15,7 +15,7 @@
 
         --swiper-navigation-size: 1.2rem !important;
 
-  			font-family: Sobrio;
+  			font-family: Arial, Helvetica, sans-serif;
      		font-size: var(--fontSize);
      		line-height:var(--line-height);
      		letter-spacing: var(--letterSpacing)
@@ -42,7 +42,7 @@
           min-height: -webkit-fill-available;
 
           overflow-y: scroll;
-          overflow-x: hidden; 
+          overflow-x: hidden;
           -webkit-overflow-scrolling: touch;
      		 }
 
@@ -54,6 +54,7 @@
      		 	margin:0;
      		 	line-height:var(--line-height);
      		 	letter-spacing: var(--letterSpacing);
+          display:inline;
      		 }
 
      		 h2{
@@ -64,6 +65,7 @@
      		 	margin:0;
      		 	line-height:var(--line-height);
      		 	letter-spacing: var(--letterSpacing);
+          display:inline;
      		 }
 
      		 p{
@@ -81,6 +83,9 @@
            text-decoration:none;
          }
 
+         a:hover {
+          text-decoration:underline;
+         }
 
 
 
@@ -133,6 +138,16 @@
           height:100vh;
   				position:relative;
 
+     		 }
+
+      .squareBag{
+          background: url("img/item.png") !important; background-size:cover !important;
+  				aspect-ratio: 1;
+          box-sizing: border-box;
+  				position:relative;
+          display:flex;
+          flex-flow: column wrap;
+          transition: .15s;
      		 }
 
 
@@ -367,17 +382,17 @@
      		 }
 
         :root {
-          --fontSize: 10pt;
+          --fontSize: 10.7pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
-          --line-height:1.3rem;
+          --line-height:1.4rem;
 
           }
 
         .projDescription{
             display:block;
             columns:1;
-            max-width:40%;
+            max-width:25rem;
             text-align: center;
             margin:auto;
           }
@@ -433,7 +448,7 @@
 			}
 
 /* 4 column grid (1500px macbook pro 15) */
-@media screen and (min-width: 1200px) and (max-width: 1800px) {
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
 
      		 /* set the grid to 4 blocks */
  			 .squareContainer{
@@ -443,9 +458,9 @@
      		 }
 
         :root {
-          --fontSize: 8pt;
+          --fontSize: 8.2pt;
           --squarePadding: 1.1rem;
-          --letterSpacing: 0.02rem;
+          --letterSpacing: 0.025rem;
           --line-height:1.3rem;
 
           }
@@ -453,7 +468,7 @@
         .projDescription{
             display:block;
             columns:1;
-            max-width:60%;
+            max-width:25rem;
             text-align: center;
             margin:auto;
           }
@@ -476,8 +491,8 @@
 
 			}
 
-/* 3 column grid (1200px small screens) */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/* 3 column grid (1300px small screens) */
+@media screen and (min-width: 900px) and (max-width: 1300px) {
 
      		 /* set the grid to 3 blocks */
  			 .squareContainer{
@@ -487,7 +502,7 @@
      		 }
 
         :root {
-          --fontSize: 8.5pt;
+          --fontSize: 9pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
@@ -501,6 +516,10 @@
             text-align: center;
             margin:auto;
           }
+
+        .projImg{
+            max-width:75%;
+        }
 
         /* for multi img slide */
         .projImgMulti {
@@ -521,7 +540,7 @@
 			}
 
 /* 2 columns grid (768px tablets) */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 900px) {
 
      		 /* set the grid to 2 blocks */
  			 .squareContainer{
@@ -531,7 +550,7 @@
      		 }
 
         :root {
-          --fontSize: 9pt;
+          --fontSize: 8.5pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
@@ -545,6 +564,10 @@
             text-align: center;
             margin:auto;
           }
+
+        .projImg{
+            max-width:75%;
+        }
 
         /* for multi img slide */
         .projImgMulti {
@@ -602,7 +625,7 @@
           }
 
         .projImg{
-            max-width:93%;
+            max-width:92%;
         }
 
         /* for multi img slide */
