@@ -167,6 +167,12 @@
      	  right:calc(var(--squarePadding) + .1rem); */
             align-items: flex-end;
      	}
+      
+      .topRightText {
+        position:absolute;
+        top: calc(var(--squarePadding) - .08rem);
+        right: var(--squarePadding);
+      }
 
      	.botLeftText {
      		 	position:absolute;
@@ -176,8 +182,9 @@
 
 		.botRightText {
      		 	position:absolute;
-     		 	top: calc(var(--squarePadding) - .08rem);
+     		 	bottom: calc(var(--squarePadding) - .08rem);
      		 	right: var(--squarePadding);
+          text-align: right;
      		 }
 
       .squareImg{
