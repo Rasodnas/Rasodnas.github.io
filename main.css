@@ -465,9 +465,9 @@
      		 }
 
         :root {
-          --fontSize: 8.2pt;
-          --squarePadding: 1.1rem;
-          --letterSpacing: 0.025rem;
+          --fontSize: 8.5pt;
+          --squarePadding: 1.3rem;
+          --letterSpacing: 0.03rem;
           --line-height:1.3rem;
 
           }
