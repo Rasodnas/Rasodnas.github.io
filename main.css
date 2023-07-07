@@ -96,12 +96,12 @@
                 /* background: url("img/item3.png") !important; background-size:cover !important; */
                 /* color: white !important; */
      		 	/* order: 0px solid #222222 !important; */
-  				aspect-ratio: 1;
+  				      aspect-ratio: 1;
                 box-sizing: border-box;
-  				position:relative;
+  				      position:relative;
                 display:flex;
                 flex-flow: column wrap;
-                transition: .15s;
+                transition: .25s;
      		 }
 
              .squareTextContainer{
@@ -116,19 +116,27 @@
                 z-index:80;
              }
 
-      /* for animation
-      .square:hover{
-          -webkit-box-shadow: inset 0px 0px 12px -9px rgba(0,0,0,.6);
-          box-shadow: inset 0px 0px 12px -9px rgba(0,0,0,.6);
-          padding: calc(var(--squarePadding) + 0.15rem);
-      }
+      /* for animation 
 
-       .square:active{
-          -webkit-box-shadow: inset 0px 0px 28px -9px rgba(0,0,0,.7);
-          box-shadow: inset 0px 0px 28px -9px rgba(0,0,0,.7);
-          padding: calc(var(--squarePadding) + 0.2rem);
+      .square:hover{
+       -webkit-box-shadow: inset 15px 0px 30px -15px #000000;
+        -moz-box-shadow: inset 15px 0px 30px -15px #000000;
+        -o-box-shadow: inset 15px 0px 30px -15px #000000;
+        box-shadow: inset 15px 0px 30px -15px #000000;
+        background:rgb(139, 139, 139) !important; color:rgb(0, 0, 0) !important;
       }
+        
+      
+       .square:active{
+      
+         -webkit-box-shadow: inset 15px 0px 30px -10px #000000;
+        -moz-box-shadow: inset 15px 0px 30px -10px #000000;
+        -o-box-shadow: inset 15px 0px 30px -10px #000000;
+        box-shadow: inset 15px 0px 30px -10px #000000;
+        padding: calc(var(--squarePadding) + 0.05rem);
+      } 
       */
+      
 
      	.square2{
      		 	background-color: none;
@@ -212,15 +220,17 @@
             box-sizing: border-box;
           }
 
-          .projImg {
-            max-height:50%;
+      
+          .projImg {                        /* capire se fare solo con SCALE */
+            max-height:58%;
             max-width:50%;
           }
 
-          .projImgFirst {
+
+          .projImgFirst {                   /* capire se fare solo con SCALE */
             margin:auto;
-            max-height:51%;
-            max-width: 51%;
+            max-height:58%;
+            max-width: 50%;
           }
 
           .projImgWrapper{
@@ -371,8 +381,47 @@
 
 
 
+/* GENERAL FORMATTING OF RESPONSIVE ELEMENTS */
 
+        .projDescription{
+              display:block;
+              columns:1;
+              max-width:25rem;
+              text-align: center;
+              margin:auto;
+              hyphens: auto !important;
+              -webkit-hyphens: auto !important;
+              -moz-hyphens: auto !important;
+              -ms-hyphens: auto !important;
+            }
 
+        .projDescriptionLarge{
+              display:block;
+              columns:1;
+              max-width:60rem;
+              text-align: justify;
+              margin:auto;
+              -webkit-hyphens: auto;
+              -webkit-hyphenate-limit-before: 3;
+              -webkit-hyphenate-limit-after: 3;
+              -webkit-hyphenate-limit-chars: 6 3 3;
+              -webkit-hyphenate-limit-lines: 2;
+              -webkit-hyphenate-limit-last: always;
+              -webkit-hyphenate-limit-zone: 8%;
+              -moz-hyphens: auto;
+              -moz-hyphenate-limit-chars: 6 3 3;
+              -moz-hyphenate-limit-lines: 2;
+              -moz-hyphenate-limit-last: always;
+              -moz-hyphenate-limit-zone: 8%;
+              -ms-hyphens: auto;
+              -ms-hyphenate-limit-chars: 6 3 3;
+              -ms-hyphenate-limit-lines: 2;
+              -ms-hyphenate-limit-last: always;
+              -ms-hyphenate-limit-zone: 8%;
+              hyphens: auto;
+              hyphenate-limit-chars: 6 3 3;
+
+          }
 
 
 
@@ -397,11 +446,11 @@
           }
 
         .projDescription{
-            display:block;
-            columns:1;
             max-width:25rem;
-            text-align: center;
-            margin:auto;
+          }
+
+        .projDescriptionLarge{
+            max-width:60rem;
           }
 
         /* for multi img slide */
@@ -465,19 +514,18 @@
      		 }
 
         :root {
-          --fontSize: 8.5pt;
-          --squarePadding: 1.3rem;
-          --letterSpacing: 0.03rem;
-          --line-height:1.3rem;
-
-          }
+            --fontSize: 9.3pt;
+            --squarePadding: 1.2rem;
+            --letterSpacing: 0.02rem;
+            --line-height:1.4rem;
+            }
 
         .projDescription{
-            display:block;
-            columns:1;
-            max-width:25rem;
-            text-align: center;
-            margin:auto;
+            max-width:60rem;
+          }
+
+        .projDescriptionLarge{
+            max-width:60rem;
           }
 
         /* for multi img slide */
@@ -509,19 +557,18 @@
      		 }
 
         :root {
-          --fontSize: 9pt;
+          --fontSize: 9.5pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
-
           }
 
         .projDescription{
-            display:block;
-            columns:1;
-            max-width:50%;
-            text-align: center;
-            margin:auto;
+            max-width:60%;
+          }
+
+        .projDescriptionLarge{
+            max-width:60%;
           }
 
         .projImg{
@@ -557,7 +604,7 @@
      		 }
 
         :root {
-          --fontSize: 8.5pt;
+          --fontSize: 10pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
@@ -565,11 +612,11 @@
           }
 
         .projDescription{
-            display:block;
-            columns:1;
             max-width:60%;
-            text-align: center;
-            margin:auto;
+          }
+
+        .projDescriptionLarge{
+            max-width:60%;
           }
 
         .projImg{
@@ -605,7 +652,7 @@
      		 }
 
         :root {
-          --fontSize: 10pt;
+          --fontSize: 11pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
@@ -622,13 +669,16 @@
         } */
 
        .projDescription{
-            display:block;
-            columns:1;
             max-width:75%;
-            max-height: 70%;
-            text-align: center;
-            margin:auto;
-            overflow: scroll;
+            max-height: 65%;
+            overflow-y: scroll;
+          }
+
+        .projDescriptionLarge{
+            text-align: left;
+            max-width:82%;
+            max-height: 65%;
+            overflow-y: scroll;
           }
 
         .projImg{
