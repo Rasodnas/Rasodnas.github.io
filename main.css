@@ -222,15 +222,15 @@
 
       
           .projImg {                        /* capire se fare solo con SCALE */
-            max-height:58%;
-            max-width:50%;
+            max-height:55%;
+            max-width:85%;
           }
 
 
           .projImgFirst {                   /* capire se fare solo con SCALE */
             margin:auto;
-            max-height:58%;
-            max-width: 50%;
+            max-height:55%;
+            max-width: 85%;
           }
 
           .projImgWrapper{
