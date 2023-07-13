@@ -611,16 +611,27 @@
 
           }
 
-        .projDescription{
-            max-width:60%;
+          .projDescription{
+            max-width:75%;
+            max-height: 65%;
+            overflow-y: scroll;
           }
 
         .projDescriptionLarge{
-            max-width:60%;
+            text-align: left;
+            max-width:82%;
+            max-height: 65%;
+            overflow-y: scroll;
           }
 
         .projImg{
-            max-width:75%;
+            max-width:80%;
+        }
+
+        .projImgFirst {
+          margin:auto;
+          max-height:45%;
+          max-width: 85%;
         }
 
         /* for multi img slide */
@@ -687,7 +698,7 @@
 
         .projImgFirst {
           margin:auto;
-          max-height:35%;
+          max-height:45%;
           max-width: 85%;
         }
 
