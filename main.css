@@ -1,8 +1,8 @@
-/* CUSTOM FONT */
+/* CUSTOM FONT 
 
-     		 /* @font-face {font-family: Sobrio; src: url("font/Akkurat Regular.ttf"); }
-     		/* @font-face {font-family: Sobrio; font-style: italic; src: url("font/Akkurat Italic.ttf"); }
-     		 /* @font-face {font-family: Sobrio; font-weight: bold; src: url("font/Akkurat Bold.ttf"); }
+     		 @font-face {font-family: Sobrio; src: url("font/regular.ttf"); }
+     		@font-face {font-family: Sobrio; font-style: italic; src: url("font/italic.ttf"); }
+     		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/bold.ttf"); } */
 
 
 
@@ -514,7 +514,7 @@
      		 }
 
         :root {
-            --fontSize: 9.3pt;
+            --fontSize: 9.5pt;
             --squarePadding: 1.2rem;
             --letterSpacing: 0.02rem;
             --line-height:1.4rem;
@@ -683,6 +683,12 @@
 
         .projImg{
             max-width:92%;
+        }
+
+        .projImgFirst {
+          margin:auto;
+          max-height:35%;
+          max-width: 85%;
         }
 
         /* for multi img slide */
