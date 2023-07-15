@@ -438,7 +438,7 @@
      		 }
 
         :root {
-          --fontSize: 11pt;
+          --fontSize: 12pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
@@ -514,7 +514,7 @@
      		 }
 
         :root {
-            --fontSize: 9.5pt;
+            --fontSize: 10pt;
             --squarePadding: 1.2rem;
             --letterSpacing: 0.02rem;
             --line-height:1.4rem;
