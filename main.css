@@ -184,8 +184,9 @@
 
      	.botLeftText {
      		 	position:absolute;
-                left:var(--squarePadding);
-     		 	bottom:var(--squarePadding);
+          padding-right: var(--squarePadding);
+          left:var(--squarePadding);
+     		 	bottom: calc(var(--squarePadding) + .08rem);
      		 }
 
 		.botRightText {
@@ -193,6 +194,7 @@
      		 	bottom: calc(var(--squarePadding) - .08rem);
      		 	right: var(--squarePadding);
           text-align: right;
+          padding-left: var(--squarePadding);
      		 }
 
       .squareImg{
@@ -660,6 +662,10 @@
      		 	display: grid;
   				grid-template-columns: repeat(1, 1fr);
   				grid-gap: 0px;
+     		 }
+
+        .squareImg{
+     		 	scale:110%;
      		 }
 
         :root {
