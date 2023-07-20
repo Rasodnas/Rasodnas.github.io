@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <!-- load local CSS -->
+    	<link rel="stylesheet" type="text/css" href="main.css" />
+
+    <!-- load Swiper CSS via CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Raffaello Chiarioni Graphic Design</title>
+
+	</head>
+
+
+
+<body style="color:black; background:white;">
+
+<!-- load Swiper js via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+
+  <span class="fixedTopLeftText"> <h1>  #1 FORMGIVING </h1> <br> <a href="index.html"> ← </a> </span>
+  <span class="fixedTopRightText"> 20/07/23 </span>
+  <span class="fixedBotLeftText">  </span>
+  <span class="fixedBotRightText"> </span>
+
+    <div class="projContainer">
+
+
+        <!-- SWIPER -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+
+                <!-- 1 -->
+                <div class="swiper-slide">
+                  <div class="projDescriptionLarge">
+                      I think true form–giving consists on translating the content in a language understandable by different senses, other than the intellect. It is a matter of opening a portal through a certain meaning. It is like peering through specifically designed windows; It allows the thing to manifest to you from other perspectives, enriching its total meaning.
+                  </div>
+              </div>
+
+              
+            </div>
+
+
+                <!-- If we need pagination
+                <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+        </div>
+
+    </div>
+
+
+
+
+<!-- INITIALIZE SWIPER -->
+<script>
+
+    const swiper = new Swiper('.swiper', {
+
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+      },
+
+      // responsive
+      breakpoints: {
+        200: {
+          slidesPerView: 1,
+          slidesPerGroup:1
+        },
+
+        1200: {
+          slidesPerView: 1,
+          slidesPerGroup: 1
+        }
+      },
+
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+     // scrollbar: {
+      //  el: '.swiper-scrollbar',
+      //},
+
+      mousewheel: {
+          forceToAxis: false
+        }
+
+    });
+
+</script>
+
+
+<style>
+          .swiper-button-next {
+          color: rgb(0, 0, 0) !important;            /* ARROW COLOR */
+          right: 1rem !important;
+        }
+
+        .swiper-button-prev {                 /* ARROW COLOR */
+          color: rgb(0, 0, 0) !important;
+          left: 1rem !important;
+        }
+</style>
+
+
+
+	</body>
+
+
+</html>

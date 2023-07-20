@@ -530,6 +530,17 @@
             max-width:60rem;
           }
 
+        .projImg{
+            max-width:80%;
+            max-height: 64%;
+        }
+
+        .projImgFirst {
+          margin:auto;
+          max-width: 85%;
+          max-height: 64%;
+        }
+
         /* for multi img slide */
         .projImgMulti {
             max-height:35vh;
