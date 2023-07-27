@@ -204,6 +204,9 @@
      		 }
 
 
+
+
+
 /* PROJECT PAGE SINGLE SQUARE STYLING */
 
           .projMegaWrapper {
@@ -222,18 +225,6 @@
             box-sizing: border-box;
           }
 
-      
-          .projImg {                        /* capire se fare solo con SCALE */
-            max-height:55%;
-            max-width:85%;
-          }
-
-
-          .projImgFirst {                   /* capire se fare solo con SCALE */
-            margin:auto;
-            max-height:55%;
-            max-width: 85%;
-          }
 
           .projImgWrapper{
             display:flex;
@@ -349,6 +340,7 @@
 
 
 /* PROJECT PAGE CONTENT STYLING */
+
          .fixedTopLeftText {
         		 	position:fixed;
               top:var(--squarePadding);
@@ -426,6 +418,26 @@
           }
 
 
+          .projImg {                        
+            max-height:55%;
+            max-width:85%;
+          }
+
+
+          .projImgFirst {                 
+            margin:auto;
+            max-height:55%;
+            max-width: 85%;
+          }
+
+          .projImgVert {            /* for very vertical images */                  
+            max-height:70%;
+            max-width:85%;
+          }
+
+          
+
+
 
 
 
@@ -455,8 +467,8 @@
             max-width:60rem;
           }
 
-        /* for multi img slide */
-        .projImgWrapper{
+        
+        .projImgWrapper{                    /* for multi img slide */
             display:flex;
             flex-flow: row wrap;
             gap: 2rem;
@@ -541,8 +553,7 @@
           max-height: 64%;
         }
 
-        /* for multi img slide */
-        .projImgMulti {
+        .projImgMulti {             /* for multi img slide */
             max-height:35vh;
           }
 
@@ -588,8 +599,7 @@
             max-width:75%;
         }
 
-        /* for multi img slide */
-        .projImgMulti {
+        .projImgMulti {             /* for multi img slide */
             max-height:30vh;
           }
 
@@ -647,8 +657,7 @@
           max-width: 85%;
         }
 
-        /* for multi img slide */
-        .projImgMulti {
+        .projImgMulti {             /* for multi img slide */
             max-height:30vh;
           }
 
@@ -719,8 +728,13 @@
           max-width: 85%;
         }
 
-        /* for multi img slide */
-        .projImgMulti {
+        .projImgVert {            /* for very vertical images */                  
+          max-height:55%;
+          max-width:90%;
+        }
+
+        
+        .projImgMulti {          /* for multi img slide */
             max-height:30vh;
           }
 
