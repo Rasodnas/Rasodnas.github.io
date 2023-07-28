@@ -419,14 +419,14 @@
 
 
           .projImg {                        
-            max-height:55%;
+            max-height:58%;
             max-width:85%;
           }
 
 
           .projImgFirst {                 
             margin:auto;
-            max-height:55%;
+            max-height:58%;
             max-width: 85%;
           }
 
@@ -477,6 +477,11 @@
             max-width: 70%;
             align-items: center;
             justify-content: center;
+          }
+
+         .projImgVert {                     /* for very vertical images */                  
+            max-height:63%;
+            max-width:85%;
           }
 
         .projImgMulti {
