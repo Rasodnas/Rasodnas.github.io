@@ -442,7 +442,7 @@
 
 
 /* 5 column grid ( > 1400px large screens) */
-@media screen and (min-width: 1800px) and (max-width: 10000px) {
+@media screen and (min-width: 1900px) and (max-width: 10000px) {
 
      		 /* set the grid to 5 blocks */
  			 .squareContainer{
@@ -523,7 +523,7 @@
 			}
 
 /* 4 column grid (1500px macbook pro 15) */
-@media screen and (min-width: 1300px) and (max-width: 1800px) {
+@media screen and (min-width: 1300px) and (max-width: 1900px) {
 
      		 /* set the grid to 4 blocks */
  			 .squareContainer{
