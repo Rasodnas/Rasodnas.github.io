@@ -15,7 +15,7 @@
 
         --swiper-navigation-size: 1.2rem !important;
 
-  			font-family: Arial, Helvetica, sans-serif;
+  			font-family: Helvetica, Arial, sans-serif;
      		font-size: var(--fontSize);
      		line-height:var(--line-height);
      		letter-spacing: var(--letterSpacing)
@@ -533,8 +533,8 @@
      		 }
 
         :root {
-            --fontSize: 9.5pt;
-            --squarePadding: 1.2rem;
+            --fontSize: 9.2pt;
+            --squarePadding: 1.3rem;
             --letterSpacing: 0.02rem;
             --line-height:1.35rem;
             }
@@ -549,13 +549,13 @@
 
         .projImg{
             max-width:80%;
-            max-height: 64%;
+            max-height: 70%;
         }
 
         .projImgFirst {
           margin:auto;
           max-width: 85%;
-          max-height: 64%;
+          max-height: 70%;
         }
 
         .projImgMulti {             /* for multi img slide */
