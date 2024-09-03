@@ -441,7 +441,7 @@
 
 
 
-/* 5 column grid ( > 1400px large screens) */
+/* 5 column grid ( > 1900px large screens) */
 @media screen and (min-width: 1900px) and (max-width: 10000px) {
 
      		 /* set the grid to 5 blocks */
@@ -549,13 +549,13 @@
 
         .projImg{
             max-width:80%;
-            max-height: 70%;
+            max-height: 72.5%;
         }
 
         .projImgFirst {
           margin:auto;
           max-width: 85%;
-          max-height: 70%;
+          max-height: 72.5%;
         }
 
         .projImgMulti {             /* for multi img slide */
