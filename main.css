@@ -4,18 +4,22 @@
      		@font-face {font-family: Sobrio; font-style: italic; src: url("font/italic.ttf"); }
      		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/bold.ttf"); } */
 
+/* GOOGLE FONTS IMPORT
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*/
+
 
 
 /* GLOBAL VARIABLES */
 :root {
-			--fontSize: 9pt;
+			--fontSize: 9pt;              /* these variables are overwritten in the responsive section of the document */
   			--squarePadding: 1.2rem;
   			--letterSpacing: 0.02rem;
   			--line-height:1.4rem;
 
         --swiper-navigation-size: 1.2rem !important;
 
-  			font-family: Helvetica, Arial, sans-serif;
+        font-family:   Helvetica, Arial, sans-serif;  
      		font-size: var(--fontSize);
      		line-height:var(--line-height);
      		letter-spacing: var(--letterSpacing)
