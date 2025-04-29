@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sortable Squares</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+      gap: 10px;
+    }
+
+    .square {
+      width: 90px;
+      height: 90px;
+      background-color: #4CAF50;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      user-select: none;
+      transition: transform 300ms ease;
+      cursor: grab;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="sortable-container">
+  <div class="square" style="background-color: #055f08;">1</div>
+  <div class="square" style="background-color: #41ffef;">2</div>
+  <div class="square" style="background-color: #955fd7;">3</div>
+  <div class="square" style="background-color: #112dce;">4</div>
+  <div class="square" style="background-color: #cd2ce6;">5</div>
+  <div class="square" style="background-color: #c92424;">6</div>
+</div>
+
+<!-- Include SortableJS from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script>
+  const container = document.getElementById('sortable-container');
+  Sortable.create(container, {
+    animation: 300,
+    ghostClass: 'dragging'
+  });
+</script>
+
+</body>
+</html>

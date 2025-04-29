@@ -16,54 +16,6 @@
 	</head>
 
 
-	<!-- DRAGGABLE SQUARES -->
-	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-
-	<!-- -->
-	<style>
-		.sortable-chosen {	/* DRAGGED */
-			opacity: 0.8;
-			transition: opacity 0.1s;
-		}
-
-		.sortable-ghost {   /* GHOST OF WHERE IT WAS */
-  			opacity: 0;
-			transition: opacity 0.1s;
-		}
-	</style>
-
-
-	<script>
-	  document.addEventListener('DOMContentLoaded', function () {
-		var container = document.querySelector('.squareContainer');
-		Sortable.create(container, {
-			animation: 150,
-			easing: "ease-out",
-			ghostClass: 'sortable-ghost', 
-			chosenClass: 'sortable-chosen',
-		});
-	  });
-
-	          // Function to shuffle elements randomly
-			function shuffleBlocks() {
-            const blocks = Array.from(container.getElementsByClassName('block'));
-
-            // Shuffle the blocks array using Fisher-Yates algorithm
-            for (let i = blocks.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [blocks[i], blocks[j]] = [blocks[j], blocks[i]];  // Swap
-            }
-
-            // Re-arrange the blocks in the container based on the shuffled array
-            blocks.forEach(block => container.appendChild(block));
-        }
-
-        // Call the shuffle function every 2 seconds
-        setInterval(shuffleBlocks, 2000);
-
-	</script>
-
-
 
 	<body style="background:black">
 
@@ -118,15 +70,15 @@
 				</div>
       		</a>
 
-		<!-- PTW 8 
+		<!-- PTW 8 -->
 		<a href="projects/verb-ngk.html">
 			<div class="square" style="background:#1aff00; color:black;">
 				<div class="squareTextContainer">
 					<span class="topLeftText"> <h1> Print This Week 8 </h1> <br> <h2> Editorial Design </h2> </span>
 				</div>
-				<img class="squareImg" src="img/thumbnails/ptw.webp" style="scale:90%; transform:rotate(-49deg);"/>
+				<img class="squareImg" src="img/thumbnails/VERB-NGK3.webp" style="scale:100%;"/>
 			</div>
-		  </a>	-->
+		  </a>	
 			
 		<!-- LO SPAZIO CHE OCCUPO -->
 			<a href="projects/lo-spazio-che-occupo.html">
