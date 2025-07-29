@@ -105,16 +105,16 @@
   				      position:relative;
                 display:flex;
                 flex-flow: column wrap;
-                transition: .2s;
+                transition: .15s;
      		 }
                       /* square hover animation */
 
                       .square:hover{
-                      -webkit-box-shadow: inset 15px 0px 30px -15px #000000;
-                        -moz-box-shadow: inset 15px 0px 30px -15px #000000;
-                        -o-box-shadow: inset 15px 0px 30px -15px #000000;
-                        box-shadow: inset 15px 0px 30px -15px #000000;
-                        background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important;
+                      -webkit-box-shadow: inset 15px 0px 35px -15px #000000;
+                        -moz-box-shadow: inset 15px 0px 35px -15px #000000;
+                        -o-box-shadow: inset 15px 0px 35px -15px #000000;
+                        box-shadow: inset 15px 0px 35px -15px #000000; 
+                        /* background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important; */
                         /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
                       }
                         
@@ -198,25 +198,41 @@
     			max-height: 100%;
           transform-origin: center center;
           transform: scale(1);
-          transition: transform 3s ease-in-out;
+          transition: transform 1.5s ease-in-out;
      	}
                 /* square Img hover effect */
 
                 @keyframes breathe {
                     0%, 100% { 
                       transform: scale(1);
-                      transition: transform 3s ease-in-out;
+
                     }
 
                     50% { 
-                      transform: scale(1.04) rotate3d(1, 1, 0.1, 1deg);
+                      transform: scale(0.95) rotate3d(1, 1, 0, 1deg);
+                    }
+
+                }
+                
+                @keyframes breathe2 {
+                    0%, 100% { 
+                      transform: scale(1);
+
+                    }
+
+                    50% { 
+                      transform: scale(0.995) rotate3d(1, 1, 0, 5deg);
                     }
 
                 }
 
-               .square:hover .squareImg{
-                    animation: breathe 0.8s ease-in-out infinite;
+               .square:hover .squareImg{ /* img resize */
+                    animation: breathe 0.5s ease-in-out infinite;
                 }
+                .square:hover > div{   /* text resize */
+                    animation: breathe2 0.5s ease-in-out;
+                }
+      
 
 
 
