@@ -97,18 +97,36 @@
 
 			.square{
      		 	/* background: linear-gradient(-120deg, black 0%, blue 100%) !important; */
-                /* background: url("img/item3.png") !important; background-size:cover !important; */
-                /* color: white !important; */
+                /*  background: url("img/item2.png") !important; background-size:cover !important; */
+                /*  color: white !important; 
      		 	/* order: 0px solid #222222 !important; */
   				      aspect-ratio: 1;
                 box-sizing: border-box;
   				      position:relative;
                 display:flex;
                 flex-flow: column wrap;
-                transition: .25s;
+                transition: .2s;
      		 }
+                      /* square hover animation */
 
-             .squareTextContainer{
+                      .square:hover{
+                      -webkit-box-shadow: inset 15px 0px 30px -15px #000000;
+                        -moz-box-shadow: inset 15px 0px 30px -15px #000000;
+                        -o-box-shadow: inset 15px 0px 30px -15px #000000;
+                        box-shadow: inset 15px 0px 30px -15px #000000;
+                        background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important;
+                        /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
+                      }
+                        
+                      /* .square:active{
+                        -webkit-box-shadow: inset 15px 0px 30px -10px #000000;
+                        -moz-box-shadow: inset 15px 0px 30px -10px #000000;
+                        -o-box-shadow: inset 15px 0px 30px -10px #000000;
+                        box-shadow: inset 15px 0px 30px -10px #000000;
+                        padding: calc(var(--squarePadding) + 0.0rem);
+                      } */
+
+      .squareTextContainer{
                 position:absolute;
                 top:0;
                 left:0;
@@ -118,30 +136,9 @@
                 padding:var(--squarePadding);
                 padding-top: calc(var(--squarePadding) - .08rem);
                 z-index:80;
-             }
-
-      /* for animation 
-
-      .square:hover{
-       -webkit-box-shadow: inset 15px 0px 30px -15px #000000;
-        -moz-box-shadow: inset 15px 0px 30px -15px #000000;
-        -o-box-shadow: inset 15px 0px 30px -15px #000000;
-        box-shadow: inset 15px 0px 30px -15px #000000;
-        background:rgb(139, 139, 139) !important; color:rgb(0, 0, 0) !important;
       }
-        
       
-       .square:active{
       
-         -webkit-box-shadow: inset 15px 0px 30px -10px #000000;
-        -moz-box-shadow: inset 15px 0px 30px -10px #000000;
-        -o-box-shadow: inset 15px 0px 30px -10px #000000;
-        box-shadow: inset 15px 0px 30px -10px #000000;
-        padding: calc(var(--squarePadding) + 0.05rem);
-      } 
-      */
-      
-
      	.square2{
      		 	background-color: none;
      		 	/* border: 1px solid #F0f0f0; */
@@ -162,19 +159,13 @@
           transition: .15s;
      		 }
 
-
-
-
-/* HOME PAGE CONTENT STYLING */
-
-
-     	.topLeftText {
+      .topLeftText {
           /* position:absolute;
           left:calc(var(--squarePadding) + .1rem);*/
           align-items: flex-start;
      	}
 
-		.topRightText {
+		  .topRightText {
      	  /* position:absolute;
      	  right:calc(var(--squarePadding) + .1rem); */
             align-items: flex-end;
@@ -191,21 +182,43 @@
           padding-right: var(--squarePadding);
           left:var(--squarePadding);
      		 	bottom: calc(var(--squarePadding) + .08rem);
-     		 }
+     	}
 
-		.botRightText {
+		  .botRightText {
      		 	position:absolute;
      		 	bottom: calc(var(--squarePadding) - .08rem);
      		 	right: var(--squarePadding);
           text-align: right;
           padding-left: var(--squarePadding);
-     		 }
+     	}
 
       .squareImg{
      		 	position:absolute;
      		 	max-width: 100%;
     			max-height: 100%;
-     		 }
+          transform-origin: center center;
+          transform: scale(1);
+          transition: transform 3s ease-in-out;
+     	}
+                /* square Img hover effect */
+
+                @keyframes breathe {
+                    0%, 100% { 
+                      transform: scale(1);
+                      transition: transform 3s ease-in-out;
+                    }
+
+                    50% { 
+                      transform: scale(1.04) rotate3d(1, 1, 0.1, 1deg);
+                    }
+
+                }
+
+               .square:hover .squareImg{
+                    animation: breathe 0.8s ease-in-out infinite;
+                }
+
+
 
 
 
