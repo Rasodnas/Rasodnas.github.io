@@ -110,10 +110,10 @@
                       /* square hover animation */
 
                       .square:hover{
-                      -webkit-box-shadow: inset 15px 0px 35px -15px #000000;
-                        -moz-box-shadow: inset 15px 0px 35px -15px #000000;
-                        -o-box-shadow: inset 15px 0px 35px -15px #000000;
-                        box-shadow: inset 15px 0px 35px -15px #000000; 
+                      -webkit-box-shadow: inset 13px 0px 35px -15px #000000;
+                        -moz-box-shadow: inset 13px 0px 35px -15px #000000;
+                        -o-box-shadow: inset 13px 0px 35px -15px #000000;
+                        box-shadow: inset 13px 0px 35px -15px #000000; 
                         /* background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important; */
                         /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
                       }
@@ -209,7 +209,7 @@
                     }
 
                     50% { 
-                      transform: scale(0.95) rotate3d(1, 1, 0, 1deg);
+                      transform: scale(0.92) rotate3d(1, 1, 0, 1deg);
                     }
 
                 }
@@ -221,17 +221,18 @@
                     }
 
                     50% { 
-                      transform: scale(0.995) rotate3d(1, 1, 0, 5deg);
+                      transform: scale(0.990) rotate3d(1, 1, 0, 5deg);
                     }
 
                 }
 
-               .square:hover .squareImg{ /* img resize */
-                    animation: breathe 0.5s ease-in-out infinite;
+               .square:hover .squareImg{ /* img resize on hover*/
+                    animation: breathe 0.7s ease-in-out infinite;
                 }
-                .square:hover > div{   /* text resize */
-                    animation: breathe2 0.5s ease-in-out;
+                .square:hover > div{   /* text resize on hover */
+                    animation: breathe2 0.6s ease-in-out;
                 }
+
       
 
 
