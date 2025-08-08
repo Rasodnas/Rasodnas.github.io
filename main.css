@@ -105,26 +105,9 @@
   				      position:relative;
                 display:flex;
                 flex-flow: column wrap;
-                transition: .15s;
+                transition: .1s;
      		 }
-                      /* square hover animation */
 
-                      .square:hover{
-                      -webkit-box-shadow: inset 13px 0px 35px -15px #000000;
-                        -moz-box-shadow: inset 13px 0px 35px -15px #000000;
-                        -o-box-shadow: inset 13px 0px 35px -15px #000000;
-                        box-shadow: inset 13px 0px 35px -15px #000000; 
-                        /* background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important; */
-                        /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
-                      }
-                        
-                      /* .square:active{
-                        -webkit-box-shadow: inset 15px 0px 30px -10px #000000;
-                        -moz-box-shadow: inset 15px 0px 30px -10px #000000;
-                        -o-box-shadow: inset 15px 0px 30px -10px #000000;
-                        box-shadow: inset 15px 0px 30px -10px #000000;
-                        padding: calc(var(--squarePadding) + 0.0rem);
-                      } */
 
       .squareTextContainer{
                 position:absolute;
@@ -200,7 +183,7 @@
           transform: scale(1);
           transition: transform 1.5s ease-in-out;
      	}
-                /* square Img hover effect */
+                /* SQUARE IMG HOVER EFFECT */
 
                 @keyframes breathe {
                     0%, 100% { 
@@ -209,7 +192,7 @@
                     }
 
                     50% { 
-                      transform: scale(0.92) rotate3d(1, 1, 0, 1deg);
+                      transform: scale(0.98) rotate3d(1, 1, 0, 1deg);
                     }
 
                 }
@@ -221,16 +204,35 @@
                     }
 
                     50% { 
-                      transform: scale(0.990) rotate3d(1, 1, 0, 5deg);
+                      transform: scale(0.992) rotate3d(1, 1, 0, 5deg);
                     }
 
                 }
 
+                /* SQUARE HOVER ANIMATION */
+
+                .square:hover{
+                      -webkit-box-shadow: inset 13px 0px 35px -20px #000000;
+                        -moz-box-shadow: inset 13px 0px 35px -20px #000000;
+                        -o-box-shadow: inset 13px 0px 35px -20px #000000;
+                        box-shadow: inset 13px 0px 35px -20px #000000; 
+                        background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important;
+                        /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
+                      }
+                        
+                      /* .square:active{
+                        -webkit-box-shadow: inset 15px 0px 30px -10px #000000;
+                        -moz-box-shadow: inset 15px 0px 30px -10px #000000;
+                        -o-box-shadow: inset 15px 0px 30px -10px #000000;
+                        box-shadow: inset 15px 0px 30px -10px #000000;
+                        padding: calc(var(--squarePadding) + 0.0rem);
+                      } */
+
                .square:hover .squareImg{ /* img resize on hover*/
-                    animation: breathe 0.7s ease-in-out infinite;
+                    animation: breathe 0.4s ease-in-out;
                 }
                 .square:hover > div{   /* text resize on hover */
-                    animation: breathe2 0.6s ease-in-out;
+                    animation: breathe2 0.4s ease-in-out;
                 }
 
       
