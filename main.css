@@ -1,8 +1,9 @@
 /* CUSTOM FONT 
 
-     		 @font-face {font-family: Sobrio; src: url("font/regular.ttf"); }
-     		@font-face {font-family: Sobrio; font-style: italic; src: url("font/italic.ttf"); }
-     		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/bold.ttf"); } */
+     		 @font-face {font-family: Sobrio; src: url("font/regular.otf"); }
+     		@font-face {font-family: Sobrio; font-style: italic; src: url("font/italic.otf"); }
+     		 @font-face {font-family: Sobrio; font-weight: bold; src: url("font/bold.otf"); } */
+         
 
 /* GOOGLE FONTS IMPORT
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
@@ -12,14 +13,14 @@
 
 /* GLOBAL VARIABLES */
 :root {
-			--fontSize: 9pt;              /* these variables are overwritten in the responsive section of the document */
-  			--squarePadding: 1.2rem;
+			--fontSize: 9.5pt;              /* these variables are overwritten in the responsive section of the document */
+  			--squarePadding: 1.4rem;
   			--letterSpacing: 0.02rem;
-  			--line-height:1.4rem;
+  			--line-height: 1.3rem;
 
         --swiper-navigation-size: 1.2rem !important;
 
-        font-family:   Helvetica, Arial, sans-serif;  
+        font-family: Sobrio, Arial, Helvetica, sans-serif;
      		font-size: var(--fontSize);
      		line-height:var(--line-height);
      		letter-spacing: var(--letterSpacing)
@@ -97,8 +98,8 @@
 
 			.square{
      		 	/* background: linear-gradient(-120deg, black 0%, blue 100%) !important; */
-                /*  background: url("img/item2.png") !important; background-size:cover !important; */
-                /*  color: white !important; 
+          /*  background: url("img/item2.png") !important; background-size:cover !important; 
+          /*  color: white !important; 
      		 	/* order: 0px solid #222222 !important; */
   				      aspect-ratio: 1;
                 box-sizing: border-box;
@@ -212,11 +213,11 @@
                 /* SQUARE HOVER ANIMATION */
 
                 .square:hover{
-                      -webkit-box-shadow: inset 13px 0px 35px -20px #000000;
+                        /* -webkit-box-shadow: inset 13px 0px 35px -20px #000000;
                         -moz-box-shadow: inset 13px 0px 35px -20px #000000;
                         -o-box-shadow: inset 13px 0px 35px -20px #000000;
-                        box-shadow: inset 13px 0px 35px -20px #000000; 
-                        background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important;
+                        box-shadow: inset 13px 0px 35px -20px #000000; */
+                        /* background: rgb(127, 127, 127) !important; color:rgb(255, 255, 255) !important;
                         /* background:linear-gradient(-120deg, rgb(92, 92, 92) 0%, rgb(150, 150, 150) 100%) !important; color:rgb(255, 255, 255) !important; */
                       }
                         
@@ -228,11 +229,11 @@
                         padding: calc(var(--squarePadding) + 0.0rem);
                       } */
 
-               .square:hover .squareImg{ /* img resize on hover*/
-                    animation: breathe 0.4s ease-in-out;
+               .square:hover .squareImg{ /* img resize on hover 
+                    animation: breathe 0.4s ease-in-out; */
                 }
-                .square:hover > div{   /* text resize on hover */
-                    animation: breathe2 0.4s ease-in-out;
+                .square:hover > div{   /* text resize on hover 
+                    animation: breathe2 0.4s ease-in-out; */
                 }
 
       
@@ -568,12 +569,12 @@
   				grid-gap: 0px;
      		 }
 
-        :root {
-            --fontSize: 9.2pt;
+        /* :root { 
+             --fontSize: 9.2pt; 
             --squarePadding: 1.3rem;
             --letterSpacing: 0.02rem;
             --line-height:1.35rem;
-            }
+            } */
 
         .projDescription{
             max-width:60rem;
@@ -621,12 +622,12 @@
   				grid-gap: 0px;
      		 }
 
-        :root {
+        /* :root {
           --fontSize: 9.5pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
-          }
+          } */
 
         .projDescription{
             max-width:60%;
