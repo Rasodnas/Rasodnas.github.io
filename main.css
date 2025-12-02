@@ -13,7 +13,7 @@
 
 /* GLOBAL VARIABLES */
 :root {
-			--fontSize: 9.5pt;              /* these variables are overwritten in the responsive section of the document */
+			--fontSize: 10pt;              /* these variables are overwritten in the responsive section of the document */
   			--squarePadding: 1.4rem;
   			--letterSpacing: 0.02rem;
   			--line-height: 1.3rem;
@@ -456,14 +456,14 @@
 
 
           .projImg {                        
-            max-height:58%;
+            max-height:68%;
             max-width:85%;
           }
 
 
           .projImgFirst {                 
             margin:auto;
-            max-height:58%;
+            max-height:68%;
             max-width: 85%;
           }
 
@@ -488,13 +488,13 @@
   				grid-gap: 0px;
      		 }
 
-        :root {
+        /* :root {
           --fontSize: 11.6pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
 
-          }
+          } */
 
         .projDescription{
             max-width:25rem;
@@ -585,14 +585,14 @@
           }
 
         .projImg{
-            max-width:80%;
-            max-height: 72.5%;
+            /* max-width:65%;
+            max-height: 72.5%; */
         }
 
         .projImgFirst {
-          margin:auto;
+          /* margin:auto;
           max-width: 85%;
-          max-height: 72.5%;
+          max-height: 65%; */
         }
 
         .projImgMulti {             /* for multi img slide */
@@ -638,7 +638,7 @@
           }
 
         .projImg{
-            max-width:75%;
+            /* max-width:75%; */
         }
 
         .projImgMulti {             /* for multi img slide */
@@ -668,13 +668,12 @@
   				grid-gap: 0px;
      		 }
 
-        :root {
+        /* :root {
           --fontSize: 10pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
-
-          }
+          } */
 
           .projDescription{
             max-width:75%;
@@ -730,13 +729,13 @@
      		 	scale:110%;
      		 }
 
-        :root {
+        /* :root {
           --fontSize: 10.3pt;
           --squarePadding: 1.2rem;
           --letterSpacing: 0.02rem;
           --line-height:1.4rem;
 
-          }
+          } */
 
         /* hide the proj titles
        .topLeftText {
