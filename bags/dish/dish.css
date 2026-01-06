@@ -2,10 +2,10 @@
 
 
 .squareBagDish{
-          background: url("../../img/bags/dish/dish_cloth.jpg") !important; background-size:cover !important;
-          color: black !important;
-          -webkit-box-shadow: 3px 3px 10px 0x rgba(0, 0, 0, 0.55); 
-          box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.55);
+          background: url("../../img/bags/dish/dish_tile1.webp"); background-size:cover;
+          color: rgb(0, 0, 0) !important;
+          -webkit-box-shadow: inset 0px 0px 0px 0x rgba(0, 0, 0, 0.15); 
+          box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
   				aspect-ratio: 1;
           box-sizing: border-box;
   				position:relative;
@@ -13,6 +13,22 @@
           flex-flow: column wrap;
           transition: .15s;
      		 }
+
+.squareBagDish2{
+          background: url("../../img/bags/dish/dish_tile2.webp"); background-size:cover; /* style="background: rgb(238, 8, 23) !important; color:rgb(0, 0, 0);" */
+          color: rgb(0, 0, 0) !important;
+          -webkit-box-shadow: 0px 0px 4px 0x rgba(0, 0, 0, 0.85); 
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.85);
+  				aspect-ratio: 1;
+          box-sizing: border-box;
+  				position:relative;
+          display:flex;
+          flex-flow: column wrap;
+          transition: .15s;
+     		 }
+
+
+          
 
 .squareImgDish{
      		 	position:absolute;
