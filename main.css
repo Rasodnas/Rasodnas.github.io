@@ -20,7 +20,7 @@
 
         --swiper-navigation-size: 1.2rem !important;
 
-        font-family: Sobrio, Arial, Helvetica, sans-serif;
+        font-family: Arial;
      		font-size: var(--fontSize);
      		line-height:var(--line-height);
      		letter-spacing: var(--letterSpacing)
@@ -142,6 +142,7 @@
           flex-flow: column wrap;
           transition: .15s;
      		 }
+
 
       .topLeftText {
           /* position:absolute;
