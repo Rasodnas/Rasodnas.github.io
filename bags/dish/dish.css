@@ -1,0 +1,24 @@
+/* LOCAL CSS FOR DISH */
+
+
+.squareBagDish{
+          background: url("../../img/bags/dish/dish_cloth.jpg") !important; background-size:cover !important;
+          color: black !important;
+          -webkit-box-shadow: 3px 3px 10px 0x rgba(0, 0, 0, 0.55); 
+          box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.55);
+  				aspect-ratio: 1;
+          box-sizing: border-box;
+  				position:relative;
+          display:flex;
+          flex-flow: column wrap;
+          transition: .15s;
+     		 }
+
+.squareImgDish{
+     		 	position:absolute;
+     		 	max-width: 100%;
+    			max-height: 100%;
+          transform-origin: center center;
+          transform: scale(1);
+          transition: transform 1.5s ease-in-out;
+     	}
