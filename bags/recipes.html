@@ -5,16 +5,26 @@
     <head>
 
     <!-- load local CSS -->
-    	<link rel="stylesheet" type="text/css" href="../../main.css" />
-		<link rel="stylesheet" type="text/css" href="dish.css" />
+    	<link rel="stylesheet" type="text/css" href="../main.css" />
+		<link rel="stylesheet" type="text/css" href="recipes.css" />
 
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>84 Recipes</title>
+        <title>Recipes</title>
 
 	</head>
+
+
+	<!-- DINAMIC TITLE -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => { /* run when content is loaded */
+			const numDishes = document.querySelectorAll(".squareImg").length;
+			document.title = `Recipes (${numDishes})`;
+			document.getElementById("recipesCount").textContent = `Recipes (${numDishes})`;
+		});
+	</script>
 
 
 	<body style="background:black; color:white;">
@@ -22,10 +32,10 @@
 		<div class="squareContainer">
 
 		<!-- MENU -->
-				<div class="squareBagDish">
+				<div class="squareBagDish2">
 					<div class="squareTextContainer">
-						<span class="topLeftText"> Recipes <br> </span>
-						<span class="topRightText"> <a href="../../about.html"> ← </a> </span>
+						<span class="topLeftText" id="recipesCount"> Recipes <br> </span>
+						<span class="topRightText"> <a href="../about.html"> ← </a> </span>
 					</div>
 				</div>
 
@@ -35,7 +45,7 @@
 					<div class="squareTextContainer">
 						<span class="topLeftText"> 1 <br> </span>
 					</div>
-					<img class="squareImg" src="../../img/bags/dish/dish1.webp" style="scale:78%;"/>
+					<img class="squareImg" src="../img/bags/recipes/dish1.webp" style="scale:76%; --s: 1; --t: 120s; --d: normal; --o: 50% 50%;"/>
 				</div>
 
 		<!-- DISH 2 -->
@@ -43,7 +53,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 2 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish2.webp" style="scale:80%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish2.webp" style="scale:80%; position:absolute; left: 6px; --s: 1; --t: 90s; --d: normal; --o: 49.5% 50.5%;"/>
 		</div>
 
 		<!-- DISH 3 -->
@@ -51,7 +61,7 @@
 					<div class="squareTextContainer">
 						<span class="topLeftText"> 3 <br> </span>
 					</div>
-					<img class="squareImg" src="../../img/bags/dish/dish3.webp" style="scale:85%;"/>
+					<img class="squareImg" src="../img/bags/recipes/dish3.webp" style="scale:85%; position:relative; top: -8px; left: 20px; --s: 1; --t: 100s; --d: reverse; --o: 44% 55.5%;"/>
 				</div>
 
 		<!-- DISH 4 -->
@@ -59,7 +69,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 4 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish4.webp" style="scale:78%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish4.webp" style="scale:78%; --s: 1; --t: 95s; --d: reverse; --o: 50% 50%;"/>
 		</div>
 
 		<!-- DISH 5 -->
@@ -67,7 +77,7 @@
 					<div class="squareTextContainer">
 						<span class="topLeftText"> 5 <br> </span>
 					</div>
-					<img class="squareImg" src="../../img/bags/dish/dish5.webp" style="scale:81%; position:relative; left: 4px; top: 2px"/>
+					<img class="squareImg" src="../img/bags/recipes/dish5.webp" style="scale:81%; position:relative; left:10px; top:10px; --s: 1; --t: 110s; --d: normal; --o: 47% 50.1%;"/>
 				</div>
 
 		<!-- DISH 6 -->
@@ -75,7 +85,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 6 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish6.webp" style="scale:78%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish6.webp" style="scale:78%;"/>
 		</div>
 
 
@@ -84,7 +94,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 7 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish7.webp" style="scale:79%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish7.webp" style="scale:79%;"/>
 		</div>
 
 		<!-- DISH 8 -->
@@ -92,7 +102,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 8 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish8.webp" style="scale:80%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish8.webp" style="scale:80%;"/>
 		</div>
 
 		<!-- DISH 9 -->
@@ -100,7 +110,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 9 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish9.webp" style="scale:80%;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish9.webp" style="scale:78%;"/>
 		</div>
 
 		<!-- DISH 10 -->
@@ -108,7 +118,7 @@
 			<div class="squareTextContainer">
 				<span class="topLeftText"> 10 <br> </span>
 			</div>
-			<img class="squareImg" src="../../img/bags/dish/dish10.webp" style="scale:81%; position:relative; left: 3px;"/>
+			<img class="squareImg" src="../img/bags/recipes/dish10.webp" style="scale:78%; position:relative; left: 3px;"/>
 		</div>
 
 
