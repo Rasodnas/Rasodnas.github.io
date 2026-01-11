@@ -15,7 +15,7 @@
 :root {
 			--fontSize: 10pt;              /* these variables are overwritten in the responsive section of the document */
   			--squarePadding: 1.4rem;
-  			--letterSpacing: 0.02rem;
+  			--letterSpacing: 0.015rem;
   			--line-height: 1.3rem;
 
         --swiper-navigation-size: 1.2rem !important;
